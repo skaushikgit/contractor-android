@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.accela.contractorcentral.view.ElasticScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/editContactScrollViewId"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_gray"
+        android:orientation="vertical" >
+
+        <com.accela.contractorcentral.view.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/FontStyle.H6"
+       		android:textColor="@color/mid_gray"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/edit_current_contact_info"
+            />
+
+        <com.accela.contractorcentral.view.PaddingEditTextView
+            android:id="@+id/editContactFirstnameId"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/card_background_white_thin_bottom"
+            android:hint="@string/firstName_message"
+            android:inputType="textPersonName"
+            />
+
+        <com.accela.contractorcentral.view.PaddingEditTextView
+            android:id="@+id/editContactLastnameId"
+             style="@style/EditTextStyle"
+             android:layout_width="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/card_background_white_thin_bottom"
+            android:hint="@string/lastName_message"
+            android:inputType="textPersonName"
+            />
+
+        <com.accela.contractorcentral.view.PaddingEditTextView
+            android:id="@+id/editContactPhoneId"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/card_background_white"
+            android:hint="@string/phone_num_message"
+            android:inputType="phone"
+            />
+
+        <com.accela.contractorcentral.view.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/FontStyle.H6"
+       		android:textColor="@color/mid_gray"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/choose_different_contact"
+             />
+
+        <include layout="@layout/card_info_contacts" />
+    </LinearLayout>
+
+</com.accela.contractorcentral.view.ElasticScrollView>

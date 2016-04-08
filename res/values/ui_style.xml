@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <style name="FontStyle">
+        
+    </style>
+    <style name="FontStyle.ActionBar">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    
+    <style name="FontStyle.H0">
+        <item name="android:textSize">46sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="FontStyle.H1">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="FontStyle.H2">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="FontStyle.H3">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="FontStyle.H4">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="FontStyle.H5">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="FontStyle.H6">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="FontStyle.H7">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="FontStyle.Title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="FontStyle.Title.Blue">
+        <item name="android:textColor">@color/header_blue</item>
+    </style>
+    <style name="FontStyle.Title.Black">
+        <item name="android:textColor">#FF000000</item>
+    </style>
+    <style name="FontStyle.Title_Bold_Grey">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="FontStyle.Title2">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="FontStyle.Title2.Blue">
+        <item name="android:textColor">@color/header_blue</item>
+    </style>
+    <style name="FontStyle.SubTitle_Bold">
+        <item name="android:textColor">#FF000000</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="FontStyle.SubTitle">
+        <item name="android:textColor">#FF000000</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="FontStyle.Description">
+        <item name="android:textColor">#FF999999</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+    </style>
+    
+    
+    <style name="EditTextStyle">
+        <item name="android:textColor">#FF000000</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+    </style>
+    
+    
+    <!-- Theme for contractor app -->
+     <style name="ContractorTheme.BlueActionBar" parent="@style/Theme.AppCompat.Light">
+        <item name="android:actionBarStyle">@style/BlueActionBar</item>
+        <item name="android:actionBarTabStyle">@style/WhiteActionBarTabs</item>
+        <item name="android:actionBarTabTextStyle">@style/ActionBarTabTextStyle</item>
+        <item name="android:actionBarDivider">@null</item>
+        <!-- Support library compatibility -->
+        <item name="actionBarStyle">@style/BlueActionBar</item>
+        <item name="actionBarTabStyle">@style/WhiteActionBarTabs</item>
+        <item name="actionBarTabTextStyle">@style/ActionBarTabTextStyle</item>
+        <item name="actionBarDivider">@null</item>
+    </style>
+    
+     <!-- Theme for contractor app -->
+     <style name="ContractorTheme.BlueActionBar.Tranparent" parent="@style/ContractorTheme.BlueActionBar">
+	    <item name="android:windowIsTranslucent">true</item>
+	    <item name="android:windowBackground">@android:color/transparent</item>
+	    <item name="android:windowContentOverlay">@null</item>
+	    <item name="android:windowNoTitle">true</item>
+	    <item name="android:backgroundDimEnabled">true</item>		
+    </style>
+    
+     <!-- Title text color -->
+     <style name="BlueTitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    
+     <!-- action bar  -->
+      <style name="BlueActionBar" parent="@style/Widget.AppCompat.Light.ActionBar">
+        <item name="android:background">@color/header_blue</item>
+        <!-- <item name="android:height">50dip</item> -->
+        <item name="android:titleTextStyle">@style/BlueTitleTextStyle</item>
+    	<item name="android:backgroundStacked">@color/white</item>
+    	<item name="android:backgroundSplit">@color/white</item>
+    	<item name="android:windowContentOverlay">@null</item>
+    	<!-- Support library compatibility -->
+    	<item name="background">@color/header_blue</item>
+        <!-- <item name="android:height">50dip</item> -->
+        <item name="titleTextStyle">@style/BlueTitleTextStyle</item>
+    	<item name="backgroundStacked">@color/white</item>
+    	<item name="backgroundSplit">@color/white</item>
+    	<item name="elevation">0dp</item>
+    	
+    	
+    </style>
+    
+     <style name="WhiteActionBarTabs"
+           parent="@style/Widget.AppCompat.Light.ActionBar.TabView">
+        <!-- tab indicator -->
+        <!-- item name="android:background">@color/white</item>-->
+         <item name="android:background">@drawable/tab_indicator</item>
+         <item name="background">@drawable/tab_indicator</item>
+    </style>
+    
+     <!-- Tab -->
+	 <style name="ActionBarTabTextStyle" parent="@style/Widget.AppCompat.Light.ActionBar.TabText">
+    	<item name="android:textAllCaps">false</item>
+    	<item name="android:textSize">16sp</item>
+    	<item name="android:textColor">@color/black</item>
+    	<!-- Support library compatibility -->
+    	<item name="textAllCaps">false</item>
+	 </style>
+
+	 <!-- Button Style -->
+	 <style name="ButtonStyle">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <style name="ButtonStyle.Solid_Blue">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/button_bg_solid_blue</item>
+    </style>
+    
+    <style name="ButtonStyle.Solid_Facebookblue">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/button_bg_solid_facebookblue</item>
+    </style>
+    
+    <style name="ButtonStyle.Solid_TwitterBlue">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/button_bg_solid_twitterblue</item>
+    </style>
+    
+    <style name="ButtonStyle.Blue_Edge">
+        <item name="android:textColor">@color/mid_gray</item>
+        <item name="android:background">@drawable/button_bg_blue_edge</item>
+    </style>
+    
+    <style name="ButtonStyle.Black_Edge">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@drawable/button_bg_black_edge</item>
+    </style>
+    
+	 <style name="ButtonStyle.Solid_White">
+        <item name="android:textColor">@color/mid_gray</item>
+        <item name="android:background">@drawable/button_bg_solid_white</item>
+    </style>
+     <style name="ButtonStyle.Solid_White_No_Round_Corner">
+        <item name="android:textColor">@color/mid_gray</item>
+        <item name="android:background">@drawable/button_bg_solid_white_no_round_corner</item>
+    </style>
+	 <style name="ButtonStyle.No_Backgroud">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@null</item>
+    </style>
+    
+</resources>

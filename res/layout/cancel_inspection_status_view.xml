@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cancelInspectionView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:padding="8dp"
+    android:background="@drawable/card_background_white">
+    
+    <com.accela.contractorcentral.view.FontTextView 
+        style="@style/FontStyle.SubTitle_Bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="Inspection Failed"/>
+
+    <com.accela.contractorcentral.view.FontTextView 
+        android:id="@+id/textTimeDate"
+        style="@style/FontStyle.Description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+</LinearLayout>

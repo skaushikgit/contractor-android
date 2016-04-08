@@ -1,0 +1,39 @@
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.accela.contractorcentral.activity.AvailableInspectionDetailsActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="16dp"
+        android:background="@drawable/card_background_white"
+        android:orientation="vertical" >
+
+  		<com.accela.contractorcentral.view.FontTextView
+            android:id="@+id/textInspectionGroup"
+            style="@style/FontStyle.SubTitle_Bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+  		<com.accela.contractorcentral.view.FontTextView
+            android:id="@+id/textInspectionType"
+            style="@style/FontStyle.Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/buttonScheduleInspection"
+            style="@style/ButtonStyle.Solid_Blue"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:text="@string/schedule_inspection"
+            android:textAllCaps="false"
+            android:textColor="@drawable/button_text_color"
+             />
+    </LinearLayout>
+
+</LinearLayout>

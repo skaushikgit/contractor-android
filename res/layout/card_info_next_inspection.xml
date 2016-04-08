@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:layout_margin="8dp"
+    android:id="@+id/landingNextInspectionId"
+    android:background="@drawable/card_background_white"
+    >
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    	android:padding = "12dp"    
+    	android:orientation="vertical" 
+         >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+         >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icn_inspect" />
+        
+		<com.accela.contractorcentral.view.FontTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/FontStyle.SubTitle_Bold"
+            android:text="@string/next_inspection" />
+		<ProgressBar
+		   android:id="@+id/spinnerInpsection"
+		   style="?android:attr/progressBarStyleSmall"
+		   android:layout_width="20dp"
+		   android:layout_height="20dp"
+		    />
+    </LinearLayout>
+	<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/detailsLayout" 
+     >
+	
+	    <FrameLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp" 
+	        android:background="#FF000000"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	        >
+	    </FrameLayout>
+	    
+	     <com.accela.contractorcentral.view.FontTextView
+	         android:id="@+id/nextInspectionDate"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            style="@style/FontStyle.Title.Black" />
+	     <com.accela.contractorcentral.view.FontTextView
+	         android:id="@+id/nextInspectionTime"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            style="@style/FontStyle.Title.Black"/>
+	     
+	     
+	     <com.accela.contractorcentral.view.FontTextView
+	         	android:id="@+id/textAddressInspection"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp"
+	            style="@style/FontStyle.SubTitle_Bold" />
+	      
+		 <com.accela.contractorcentral.view.FontTextView
+		        android:id="@+id/textPermitType"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        style="@style/FontStyle.Description"
+		        android:textColor="#FF000000"
+		        android:text="Building" />		     
+
+     </LinearLayout>
+     <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="5dp"
+    android:id="@+id/inspectionActionContainer"
+    android:visibility="gone"
+     >
+		
+        <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" >
+    	</View>
+         <Button
+             android:id="@+id/buttonMoreActions"
+             style="@style/ButtonStyle.Blue_Edge"
+             android:layout_width="140dp"
+             android:text="@string/more_actions" 
+             
+             />
+		<View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" >
+    	</View>
+         <Button
+             android:id="@+id/buttonContact"
+             style="@style/ButtonStyle.Solid_Blue"
+             android:layout_width="140dp"
+             android:text="@string/contact" />
+		 <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" >
+    </View>
+	</LinearLayout>
+	<Button
+             android:id="@+id/buttonScheduleInspection"
+             style="@style/ButtonStyle.Blue_Edge"
+              android:layout_marginTop="5dp"
+             android:textColor="@color/button_blue"
+             android:text="@string/schedule_inspection" />
+	</LinearLayout>
+	<Button
+          android:id="@+id/buttonViewInspections"
+          style="@style/ButtonStyle.Solid_White"
+          android:layout_marginBottom="1dp"
+          android:text="@string/view_all_inspections"/>
+</LinearLayout>
+

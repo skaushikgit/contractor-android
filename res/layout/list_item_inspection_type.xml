@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/itemContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/card_background_white"
+        android:orientation="vertical"
+        android:padding="8dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageInfo"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="top"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/scheduled" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <com.accela.contractorcentral.view.FontTextView
+                    android:id="@+id/textInspectionCode"
+                    style="@style/FontStyle.SubTitle_Bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Electrical" />
+
+                <com.accela.contractorcentral.view.FontTextView
+                    android:id="@+id/textInspectionType"
+                    style="@style/FontStyle.SubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Electrical" />
+
+                <com.accela.contractorcentral.view.FontTextView
+                    android:id="@+id/textMoreInfo"
+                    style="@style/FontStyle.Description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ISLANDTON-12CAP-00000-0004U" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

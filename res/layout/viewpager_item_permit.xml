@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp" >
+
+    <com.accela.contractorcentral.view.FontTextView
+        android:id="@+id/textPermitType"
+        style="@style/FontStyle.SubTitle_Bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Electrical" />
+
+    <com.accela.contractorcentral.view.FontTextView
+        android:id="@+id/textPermitId"
+        style="@style/FontStyle.Description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="ISLANDTON-12CAP-00000-0004U" />
+
+    <com.accela.contractorcentral.view.FontTextView
+        android:id="@+id/textStatus"
+        style="@style/FontStyle.H4"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/red_failed_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Building" />
+
+</LinearLayout>

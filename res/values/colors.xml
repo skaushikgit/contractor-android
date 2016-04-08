@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="header_blue">#FF12A5D9</color>
+    <color name="button_blue">#FF12A5D9</color>
+    <color name="light_blue">#FF00FFFF</color>
+    <color name="button_hightlight">#FFD3D3D3</color>
+    <color name="background_gray">#FFEEEEEE</color>
+    <color name="mid_gray">#FF656565</color>
+    <color name="red">#FFEF5923</color>
+    <color name="orange">#FFFF9D0A</color>
+    <color name="red_orange">#FA893E</color>
+    <color name="grey">#FF4D4E4F</color>
+    <color name="light_gray">#FFD3D3D3</color>
+    <color name="red_failed_header">#FFE22006</color>
+    <color name="red_failed_content">#FFF05A24</color>
+    <color name="green_pass_header">#FF3F9210</color>
+    <color name="green_pass_content">#FF6AB626</color>
+    <color name="blue_nearby_header">#FF1184D0</color>
+    <color name="blue_nearby_content">#FF29ABE2</color>
+    <color name="default_phone_system_bar">#FF1184D0</color>
+    <color name="facebook_blue">#3b5998</color>
+    <color name="twitter_blue">#4F98F7</color>
+</resources>

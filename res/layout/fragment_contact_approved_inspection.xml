@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.accela.contractorcentral.view.ElasticScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contactApprovedInspectionId"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/inspectorContactId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_background_white"
+            android:layout_marginBottom="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <com.accela.contractorcentral.view.ContactListView
+                android:id="@+id/listContactInspector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_background_white"
+            android:orientation="vertical" >
+
+            <com.accela.contractorcentral.view.ContactListView
+                android:id="@+id/listContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/buttonAddFromId"
+                    style="@style/ButtonStyle.Solid_White"
+                    android:layout_width="0dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_weight="3"
+                    android:text="@string/add_from_address_book" />
+
+                <Button
+                    android:id="@+id/buttonAddNewId"
+                    style="@style/ButtonStyle.Solid_White"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_weight="2"
+                    android:text="@string/add_new" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</com.accela.contractorcentral.view.ElasticScrollView>

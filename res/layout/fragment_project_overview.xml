@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray" >
+
+    <FrameLayout
+        android:id="@+id/mapViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="220dp" />
+
+    <com.accela.contractorcentral.view.ElasticScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="90dp" >
+            </View>
+
+            <include layout="@layout/card_info_next_inspection" />
+
+            <include layout="@layout/card_info_contacts" />
+
+            <include layout="@layout/card_info_document" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="60dp" >
+            </View>
+        </LinearLayout>
+    </com.accela.contractorcentral.view.ElasticScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray" >
+    </View>
+
+</FrameLayout>

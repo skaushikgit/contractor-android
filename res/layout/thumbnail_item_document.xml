@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="1dp"
+    android:orientation="horizontal" >
+
+	<FrameLayout 
+	    android:layout_width="match_parent"
+    	android:layout_height="match_parent">
+
+		<com.accela.contractorcentral.view.WebImageView
+	    android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/blank_image" />
+	    <ProgressBar
+        android:id="@+id/spinLoading"
+        style="@android:style/Widget.ProgressBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+	    <ImageView 
+	    android:id="@+id/imageFrame"
+	    android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/image_frame"
+        android:visibility="invisible"
+        />
+	</FrameLayout>
+</LinearLayout>
+

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+    
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:id="@+id/projectInfoContainer" >
+    
+<com.accela.contractorcentral.view.ElasticScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/projectInfoScrollView">
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <com.accela.contractorcentral.view.FontTextView
+        style="@style/FontStyle.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:textColor="@color/mid_gray"
+        android:text="@string/contacts_on_project" >
+
+    </com.accela.contractorcentral.view.FontTextView>
+
+	<include layout="@layout/card_info_contacts"/>
+	
+	
+	<com.accela.contractorcentral.view.FontTextView
+	    style="@style/FontStyle.Title"
+	    android:id="@+id/paymentTextId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:textColor="@color/mid_gray"
+        android:text="@string/recent_payment_history" >
+
+    </com.accela.contractorcentral.view.FontTextView>
+    
+    <include layout="@layout/card_info_fees"/>
+
+</LinearLayout>
+    
+</com.accela.contractorcentral.view.ElasticScrollView>
+<View android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/light_gray"
+    />
+    
+ </FrameLayout>

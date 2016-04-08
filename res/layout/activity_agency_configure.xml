@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.accela.contractorcentral.view.ElasticScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+	
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_gray"
+        android:orientation="vertical"
+        android:padding="8dp"
+         >
+		
+        <include layout="@layout/list_header_agency" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_background_white_thin_bottom"
+            >
+
+            <com.accela.contractorcentral.view.WebImageView
+                android:id="@+id/imageViewLogo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:scaleType="fitCenter"
+                android:visibility="gone"
+                 />
+        </FrameLayout>
+
+        <com.accela.contractorcentral.view.PaddingEditTextView
+            android:id="@+id/editUserName"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:background="@drawable/card_background_white_thin_bottom"
+            android:hint="@string/choose_username"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="8dp" >
+           <requestFocus />
+        </com.accela.contractorcentral.view.PaddingEditTextView>
+
+        <com.accela.contractorcentral.view.PaddingEditTextView
+            android:id="@+id/editPassword"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:background="@drawable/card_background_white_thin_bottom"
+            android:hint="@string/choose_password"
+            android:inputType="textPassword"
+            android:paddingLeft="8dp" />
+
+        <com.accela.contractorcentral.view.PaddingEditTextView
+            android:id="@+id/editPasswordConfirm"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:background="@drawable/card_background_white"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:paddingLeft="8dp" />
+        
+        <Button
+             android:id="@+id/buttonLogin"
+             style="@style/ButtonStyle.Solid_Blue"
+             android:layout_marginTop="15dp"
+             android:layout_marginLeft="15dp"
+             android:layout_marginRight="15dp"
+             android:textColor="@drawable/button_text_color"
+             android:text="@string/Log_in" />
+        <Button
+             android:id="@+id/buttonRemove"
+             style="@style/ButtonStyle.Solid_White"
+             android:layout_marginTop="15dp"
+             android:layout_marginLeft="15dp"
+             android:layout_marginRight="15dp"
+             android:layout_marginBottom="8dp"
+             android:text="@string/remove_agency" />
+	</LinearLayout>
+
+    
+
+</com.accela.contractorcentral.view.ElasticScrollView>

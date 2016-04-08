@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+ 	<include layout="@layout/loading_and_refresh" />
+     <Button
+             android:id="@+id/buttonMoreTimes"
+             style="@style/ButtonStyle.Solid_Blue"
+             android:layout_margin="23dp"
+             android:textColor="@drawable/button_text_color"
+             android:text="@string/view_more_times" />
+</LinearLayout>
+
+

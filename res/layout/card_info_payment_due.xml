@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:layout_margin="8dp"
+    android:padding = "12dp"
+    android:background="@drawable/card_background_white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+         >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icn_fees" />
+        
+		<com.accela.contractorcentral.view.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/FontStyle.SubTitle_Bold"
+            android:text="@string/next_payment_due" />
+
+    </LinearLayout>
+	<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/detailsLayout" 
+     >
+	
+	    <FrameLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp" 
+	        android:background="#FF000000"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	        >
+	    </FrameLayout>
+	    
+	     <com.accela.contractorcentral.view.FontTextView
+	         android:id="@+id/nextPaymentDate"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            style="@style/FontStyle.Title" />
+	            
+	     <com.accela.contractorcentral.view.FontTextView
+	         	android:id="@+id/nextPaymentAmount"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            style="@style/FontStyle.Title" />
+	     
+	     
+	     <com.accela.contractorcentral.view.FontTextView
+	         	android:id="@+id/textAddressFee"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp"
+	            style="@style/FontStyle.SubTitle_Bold"
+	            android:text="Address Line 1" />
+	      
+		 <com.accela.contractorcentral.view.FontTextView
+		        android:id="@+id/textFeePermitType"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        style="@style/FontStyle.Description"
+		        android:textColor="#FF000000" />		     
+
+     </LinearLayout>
+</LinearLayout>
+

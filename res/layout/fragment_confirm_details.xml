@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.accela.contractorcentral.view.ElasticScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/confirmInspectionScrollView"
+    >
+    <LinearLayout 
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_gray"
+        android:orientation="vertical"
+        tools:context=".activity.ScheduleConfirmActivity" >
+
+        <include layout="@layout/card_confirm_details" />
+
+        <Button
+            android:id="@+id/scheduleAnotherInspectionId"
+            style="@style/ButtonStyle.Black_Edge"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/schedule_another_inspection"
+            android:textAllCaps="false"
+            android:visibility="gone" />
+        
+        <LinearLayout 
+            android:id="@+id/cancelRescheduleLayoutId"
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+        	android:background="@color/background_gray"
+        	android:orientation="horizontal" >
+        	<Button
+            	android:id="@+id/cancelInspectionId"
+            	style="@style/ButtonStyle.Solid_Blue"
+            	android:text="@string/cancel_inspection"
+            	android:textAllCaps="false"
+            	android:layout_width="0dp"
+        		android:layout_weight="0.5"
+            	android:layout_marginRight="10dp"
+            	android:visibility="gone" />
+        	<Button
+            	android:id="@+id/RescheduleInspectionId"
+            	style="@style/ButtonStyle.Solid_Blue"
+            	android:text="@string/reschedule_inspection"
+            	android:textAllCaps="false"
+            	android:layout_width="0dp"
+        		android:layout_weight="0.5"
+            	android:layout_marginLeft="10dp"
+            	android:visibility="gone" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/scheduleInspectionId"
+            style="@style/ButtonStyle.Solid_Blue"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/schedule_inspection"
+            android:textAllCaps="false"
+            android:textColor="@drawable/button_text_color"/>
+    </LinearLayout>
+</com.accela.contractorcentral.view.ElasticScrollView>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/loadingRefreshView"
+    >
+    <FrameLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+     android:background="@drawable/gray_box"
+        >
+	<LinearLayout 
+	    android:layout_width="300dp"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" 
+	    android:layout_gravity="center"
+	    android:id="@+id/loadingContainer"
+	    >
+		
+	    <ProgressBar
+	        android:id="@+id/progressBar1"
+	        android:layout_margin="10dp"
+	        style="?android:attr/progressBarStyleLarge"
+	        android:layout_width="36dp"
+	        android:layout_height="36dp" />
+	
+	    <com.accela.contractorcentral.view.FontTextView
+	        android:id="@+id/textLoading"
+	        android:layout_gravity="center"
+	        android:textSize="14sp"
+	        android:layout_margin="10dp"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:text="" />
+		
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" 
+	    android:layout_gravity="center"
+	    android:id="@+id/refreshContainer"
+	    > 
+	    <com.accela.contractorcentral.view.FontTextView
+	        android:id="@+id/textMessage"
+	        android:layout_gravity="center"
+	        android:textSize="14sp"
+	        android:layout_margin="10dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="" />
+		<!-- don't need refresh button any more -->
+		<Button
+	             android:id="@+id/buttonRefresh"
+	             style="@style/ButtonStyle.Blue_Edge"
+	             android:layout_gravity="center"
+	             android:layout_marginTop="10dp"
+	             android:visibility="gone" 
+	             android:text="@string/refresh" />
+		
+	</LinearLayout>
+	</FrameLayout>
+</FrameLayout>

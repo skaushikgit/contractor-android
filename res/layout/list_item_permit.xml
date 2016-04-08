@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:layout_margin="8dp"
+    android:padding = "12dp"
+    android:background="@drawable/card_background_white"
+    >
+ 	
+	<LinearLayout 
+    android:layout_width="match_parent"
+   	android:layout_height="match_parent" 
+     >
+		<LinearLayout 
+		android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:layout_weight="1"
+    	>
+		     <com.accela.contractorcentral.view.FontTextView
+		         	android:id="@+id/textPermitType"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="5dp"
+		            style="@style/FontStyle.SubTitle_Bold"
+		            android:text="Electrical" />
+		      
+			 <com.accela.contractorcentral.view.FontTextView
+			        android:id="@+id/textPermitId"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        style="@style/FontStyle.Description"
+			        android:text="ISLANDTON-12CAP-00000-0004U" />		     
+		</LinearLayout>     
+		<ImageView
+			    android:id="@+id/imageInfo"
+			    android:padding="10dp"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center_vertical"
+			    android:src="@drawable/info_on" />
+     </LinearLayout>
+	<LinearLayout 
+    android:layout_width="match_parent"
+   	android:layout_height="wrap_content"
+   	android:orientation="vertical"
+    android:id="@+id/detailsLayout" 
+     >
+		<com.accela.contractorcentral.view.FontTextView
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="5dp"
+		    style="@style/FontStyle.SubTitle_Bold"
+		    android:text="@string/status" />
+		      
+		<com.accela.contractorcentral.view.FontTextView
+		    android:id="@+id/textStatus"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			style="@style/FontStyle.Description"
+			android:text="Building" />	
+		<com.accela.contractorcentral.view.FontTextView
+		    android:id="@+id/textMoreInfo1"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="5dp"
+		    style="@style/FontStyle.SubTitle_Bold"
+		    android:text="More Info Line 1" />
+		<com.accela.contractorcentral.view.FontTextView
+		    android:id="@+id/textMoreInfo2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			style="@style/FontStyle.Description"
+			android:text="More Info line 2" />			     
+		
+     </LinearLayout>
+</LinearLayout>
+</LinearLayout>
+

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/headContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <com.accela.contractorcentral.view.FontTextView
+        android:id="@+id/textTitle"
+        style="@style/FontStyle.Title_Bold_Grey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Your Agencies" />
+
+    <com.accela.contractorcentral.view.FontTextView
+        android:id="@+id/textDesc"
+        style="@style/FontStyle.H7"
+        android:textColor="@color/black"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:text="Click an agency to edit login details" />
+	<ProgressBar
+		android:id="@+id/agencyListViewProgressBarId"
+		style="?android:attr/progressBarStyleLarge"
+		android:layout_marginTop="50dp"
+		android:layout_margin="2dp"
+        android:layout_gravity="center_horizontal"
+		android:layout_width="35dp"
+		android:layout_height="35dp"
+		android:visibility="gone"
+		/>
+</LinearLayout>

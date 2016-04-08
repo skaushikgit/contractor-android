@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+       
+     <LinearLayout 
+        android:id="@+id/second_comming_inspection_id"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:padding="16dp"
+        android:background="@drawable/card_background_white"
+        android:orientation="vertical" >
+   
+            <com.accela.contractorcentral.view.FontTextView
+                android:id="@+id/textAddressLine1SecondInspection"
+                style="@style/FontStyle.SubTitle_Bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+            <com.accela.contractorcentral.view.FontTextView
+                android:id="@+id/textAddressLine2SecondInspection"
+                style="@style/FontStyle.Description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#FF000000" >
+            </FrameLayout>
+
+            <com.accela.contractorcentral.view.FontTextView
+                android:id="@+id/textDateSecondInspection"
+                style="@style/FontStyle.H2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="#FF12A5D9"
+                android:textSize="20sp" />
+
+            <com.accela.contractorcentral.view.FontTextView
+                android:id="@+id/textTimeSecondInspection"
+                style="@style/FontStyle.H2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FF000000"
+                android:textSize="20sp" />
+
+            <com.accela.contractorcentral.view.FontTextView
+                android:id="@+id/textInspectionGroupSecondInspection"
+                style="@style/FontStyle.SubTitle_Bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Electrical" />
+
+            <com.accela.contractorcentral.view.FontTextView
+                android:id="@+id/textInspectionTypeSecondInspection"
+                style="@style/FontStyle.SubTitle_Bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp" />
+
+             <Button
+                android:id="@+id/buttonContactSecondInspection"
+                style="@style/ButtonStyle.Solid_Blue"
+                android:layout_marginTop="10dp"
+                android:focusable="false"
+				android:focusableInTouchMode="false"
+				android:textColor="@drawable/button_text_color"
+                android:text="@string/contact" />
+
+    </LinearLayout> 
+</LinearLayout>
+

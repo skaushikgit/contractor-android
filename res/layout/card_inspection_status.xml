@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"    
+    xmlns:custom="http://schemas.android.com/apk/res/com.accela.contractorcentral"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout android:id="@+id/cardContentBack"
+	android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:background="@color/orange"
+    >
+     <ImageView
+        android:id="@+id/imageStatus"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:layout_marginRight="-20dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="right"
+        android:src="@drawable/insp_fail" />    
+    
+    <LinearLayout android:id="@+id/cardContent"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical"
+    	android:padding="15dp"
+     >
+    <com.accela.contractorcentral.view.FontTextView
+        android:id="@+id/inspectionTitle"
+        style="@style/FontStyle.H0"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp"
+        android:text="@string/INSPECTION"
+        custom:fontType="DINOT-CondBlack.otf"
+        />
+
+    <com.accela.contractorcentral.view.FontTextView
+        android:id="@+id/textStatus"
+        style="@style/FontStyle.H0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-14dp"
+        android:text="@string/FAILED"
+        android:textColor="@color/white"
+        custom:fontType="DINOT-CondBlack.otf"
+         />
+
+    <com.accela.contractorcentral.view.FontTextView
+        android:id="@+id/textAddressLine1"
+        style="@style/FontStyle.H4"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="2633 Camio Ramon"
+        custom:fontType="DINOT-Bold.otf"
+         />
+
+    <com.accela.contractorcentral.view.FontTextView
+        android:id="@+id/textAddressLine2"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:text="San Ramon, CA 94583"
+        custom:fontType="DINOT-Regular.otf"
+        />
+
+    <com.accela.contractorcentral.view.FontTextView
+        android:id="@+id/textGroup"
+        style="@style/FontStyle.H4"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Electrical"
+        custom:fontType="DINOT-Bold.otf"
+         />
+
+    <com.accela.contractorcentral.view.FontTextView
+        android:id="@+id/textType"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:text="Wiring, Final (036)"
+        custom:fontType="DINOT-Regular.otf"
+        />
+
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        >
+	        <Button
+	        android:id="@+id/buttonDetails"
+	        style="@style/ButtonStyle.Solid_White"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="10dp"
+	        android:textAllCaps="false"
+	        android:text="@string/Details" />
+	
+	    	<Button
+	        android:id="@+id/buttonContact"
+	        style="@style/ButtonStyle.Solid_White"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:textAllCaps="false"
+	        android:text="@string/Contact" />
+	        
+	    </LinearLayout>
+
+	</LinearLayout>
+
+   
+
+	</FrameLayout>
+</LinearLayout>
+

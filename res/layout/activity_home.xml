@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.accela.contractorcentral"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_splash" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_margin="40dp"
+        android:gravity="left"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="-13dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/accela_logo" />
+
+        <com.accela.contractorcentral.view.FontTextView
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contractor_app"
+            android:textColor="@color/white"
+            custom:fontType="DINOT-CondBlack.otf" />
+
+        <com.accela.contractorcentral.view.FontTextView
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:layout_marginTop="-10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contractor_central"
+            android:textColor="@color/white"
+            custom:fontType="DINOT-CondBlack.otf" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/buttonLogin"
+            style="@style/ButtonStyle.Solid_Blue"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_margin="6dp"
+            android:textColor="@drawable/button_text_color"
+            android:text="@string/Log_in" />
+
+        <Button
+            android:id="@+id/buttonSignup"
+            style="@style/ButtonStyle.Solid_White"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_margin="6dp"
+            android:text="@string/Sign_Up" />
+
+        <com.accela.contractorcentral.view.FontTextView
+            android:id="@+id/learnMoreId"
+            style="@style/FontStyle.H6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/learn_more"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</FrameLayout>

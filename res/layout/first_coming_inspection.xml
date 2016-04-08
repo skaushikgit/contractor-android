@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/first_comming_inspection_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_background_white"
+        android:layout_margin="8dp"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+            <com.accela.contractorcentral.view.FontTextView
+                android:id="@+id/textAddressLine1FirstInspection"
+                style="@style/FontStyle.SubTitle_Bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"/>
+
+            <com.accela.contractorcentral.view.FontTextView
+                android:id="@+id/textAddressLine2FirstInspection"
+                style="@style/FontStyle.Description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#FF000000" >
+            </FrameLayout>
+
+            <com.accela.contractorcentral.view.FontTextView
+                android:id="@+id/textDateFirstInspection"
+                style="@style/FontStyle.H1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="#FF12A5D9"
+                android:textSize="30sp" />
+
+            <com.accela.contractorcentral.view.FontTextView
+                android:id="@+id/textTimeFirstInspection"
+                style="@style/FontStyle.H1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FF000000"
+                android:textSize="30sp" />
+
+            <com.accela.contractorcentral.view.FontTextView
+                android:id="@+id/textInspectionGroupFirstInspection"
+                style="@style/FontStyle.SubTitle_Bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp" />
+
+            <com.accela.contractorcentral.view.FontTextView
+                android:id="@+id/textInspectionTypeFirstInspection"
+                style="@style/FontStyle.SubTitle_Bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/buttonContactFirstInspection"
+                style="@style/ButtonStyle.Solid_Blue"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:focusable="false"
+				android:focusableInTouchMode="false"
+				android:textColor="@drawable/button_text_color"
+                android:text="@string/contact" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+	    <shape xmlns:android="http://schemas.android.com/apk/res/android" 
+	     android:shape="rectangle"> 
+	     <stroke android:width="2dp" android:color="@color/button_blue" />
+	     <solid android:color="@color/button_hightlight" />
+	    <corners android:bottomRightRadius="3dp" android:bottomLeftRadius="3dp" 
+	     android:topLeftRadius="3dp" android:topRightRadius="3dp"/> 
+	</shape>       
+    </item>
+    <item android:state_focused="true">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" 
+	     android:shape="rectangle"> 
+	     <stroke android:width="2dp" android:color="@color/button_blue" />
+	     <solid android:color="@color/button_hightlight" />
+	    <corners android:bottomRightRadius="3dp" android:bottomLeftRadius="3dp" 
+	     android:topLeftRadius="3dp" android:topRightRadius="3dp"/> 
+	     </shape>
+    </item>
+    <item>
+    	<shape xmlns:android="http://schemas.android.com/apk/res/android" 
+	     android:shape="rectangle"> 
+	     <stroke android:width="2dp" android:color="@color/button_blue" />
+	     <solid android:color="#FFFFFFFF" />
+	    <corners android:bottomRightRadius="3dp" android:bottomLeftRadius="3dp" 
+	     android:topLeftRadius="3dp" android:topRightRadius="3dp"/>     
+    	</shape>
+    </item>
+</selector>

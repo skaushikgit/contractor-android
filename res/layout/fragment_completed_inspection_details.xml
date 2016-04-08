@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/cancel_inspection_status_view" />
+
+        <LinearLayout
+            android:id="@+id/contactContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:background="@drawable/card_background_white" >
+
+            <com.accela.contractorcentral.view.ContactListView
+                android:id="@+id/listFailedContactInspector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        
+        <Button
+            android:id="@+id/buttonUploadDocument"
+            style="@style/ButtonStyle.Solid_White"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="1dp"
+            android:text="Upload" />
+
+        <LinearLayout
+            android:id="@+id/commentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/card_background_white"
+            android:orientation="vertical"
+            android:padding="12dp" >
+
+            <com.accela.contractorcentral.view.FontTextView
+                android:id="@+id/textCommentTitle"
+                style="@style/FontStyle.SubTitle_Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/inspection_passed" />
+
+            <com.accela.contractorcentral.view.FontTextView
+                android:id="@+id/textViewComment"
+                style="@style/FontStyle.Description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/no_info_for_inspection" />
+        </LinearLayout>
+
+        <com.accela.contractorcentral.view.DocumentThumbView
+            android:id="@+id/documentThumbView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:gravity="center"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth" />
+
+        
+
+        <Space
+            android:id="@+id/bottomSpace"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true" >
+
+     <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:padding="10dp"
+        android:gravity="center" >
+
+
+        
+      <com.accela.contractorcentral.view.FontTextView 
+        android:id="@+id/month_name"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="January"
+        style="@style/FontStyle.SubTitle_Bold" />
+
+
+
+    </LinearLayout>
+    
+	<FrameLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp" 
+	        android:background="@color/mid_gray"
+	        android:layout_marginBottom="5dp"
+	        />
+    <LinearLayout android:id="@+id/day_names"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dip"
+        android:layout_marginRight="2dip"
+        android:gravity="center" >
+
+        <com.accela.contractorcentral.view.FontTextView 
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            style="@style/FontStyle.SubTitle_Bold"
+            android:text="S"
+             />
+
+        <com.accela.contractorcentral.view.FontTextView 
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" 
+            style="@style/FontStyle.SubTitle_Bold"
+            android:text="M"
+            />
+
+        <com.accela.contractorcentral.view.FontTextView 
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" 
+            style="@style/FontStyle.SubTitle_Bold"
+            android:text="T"
+            />
+
+        <com.accela.contractorcentral.view.FontTextView 
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" 
+            style="@style/FontStyle.SubTitle_Bold"
+            android:text="W"
+            />
+
+        <com.accela.contractorcentral.view.FontTextView 
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" 
+            style="@style/FontStyle.SubTitle_Bold"
+            android:text="T"
+            />
+
+        <com.accela.contractorcentral.view.FontTextView 
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" 
+            style="@style/FontStyle.SubTitle_Bold"
+            android:text="F"
+            />
+
+        <com.accela.contractorcentral.view.FontTextView 
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" 
+            style="@style/FontStyle.SubTitle_Bold"
+            android:text="S"
+            />
+
+    </LinearLayout>
+
+   
+
+    <ListView android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawSelectorOnTop="false"
+        android:cacheColorHint="@android:color/transparent"
+        android:fastScrollEnabled="false"
+        android:overScrollMode="never" />
+
+</LinearLayout>

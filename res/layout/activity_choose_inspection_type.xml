@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:id="@+id/rootContainer"
+	>
+	    <com.accela.contractorcentral.view.InspectionTypeListView
+        android:id="@+id/listViewInspectionType"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:dividerHeight="0dp"
+		android:divider="@null"
+        />
+	  <ImageView
+	    android:id="@+id/buttonConfirm"
+	    android:layout_width="60dp"
+	    android:layout_height="60dp"
+	    android:layout_gravity="bottom|right"
+	    android:baselineAlignBottom="false"
+	    android:paddingBottom="10dp"
+	    android:paddingRight="10dp"
+	    android:src="@drawable/btn_check" />
+</FrameLayout>

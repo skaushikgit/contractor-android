@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootContainer"
+     >
+	<LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+       	android:paddingBottom="10dp"
+	    android:paddingRight="10dp"
+        >
+
+    	<Button
+    	    android:id="@+id/buttonSchedule"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_gravity="center_vertical"
+    	    style="@style/ButtonStyle.Solid_White"
+    	    android:padding="5dp"
+    	    android:textAllCaps="false"
+    	    android:text="@string/schedule_inspection" />
+
+    		<ImageView
+	    android:id="@+id/imageSchedule"
+	    android:layout_width="60dp"
+	    android:layout_height="60dp"
+	    android:src="@drawable/btn_plus" />
+	</LinearLayout>    	
+
+</FrameLayout>
